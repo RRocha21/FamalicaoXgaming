@@ -1,0 +1,28 @@
+.row
+		form(enctype="multipart/form-data").col.s12
+			.row
+				.input-field.col.s12.m12
+					select#left_sponsors
+						option(value='default', selected='') New Sponsor
+				.input-field.col.s12.m12
+					input#left_sponsor_name.validate(placeholder='Left Sponsor Name', type='text', name="left_sponsor_name")
+					input#id(type='hidden', name="_id", value='')
+					label(for='left_sponsor_name') Left Sponsor Name
+				.input-field.col.s12.m6
+					.file-field.input-field
+						.btn
+							span File
+							input#left_sponsor_logo(type='file', name='logo')
+						.file-path-wrapper
+							input.file-path.validate(type='text')
+							label Image Size for Best Quality and No Deformation: 340x60px // 350x70px
+				.input-field.col.s12.m6
+					.col.s12.m12
+						.card-panel.grey.lighten-5.z-depth-1
+							.row
+								.col.s12
+									img.circle.responsive-img#left_sponsor_logo_img(alt='')
+									// notice the "circle" class
+				.input-field.col.s12
+					a.waves-effect.waves-light.btn#save_left_sponsor Save Sponsor
+					a.waves-effect.waves-light.btn.disabled#delete_left_sponsor Delete Sponsor

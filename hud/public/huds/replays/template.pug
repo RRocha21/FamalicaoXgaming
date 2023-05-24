@@ -1,0 +1,769 @@
+html
+  head
+    script(src="https://cdn.socket.io/socket.io-1.3.7.js")
+    script(src="http://code.jquery.com/jquery-2.1.4.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+    script(src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js")
+    script.
+      var ip = "#{ip}",
+      port = "#{port}",
+      disp_avatars = #{avatars},
+      delay = #{delay};
+    script(src="/js/main.js")
+    script(src=hud)
+    link(rel='stylesheet', href=css)
+    link(rel='stylesheet', href='/files/fonts/stylesheet.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel='stylesheet', href='https://csshake.surge.sh/csshake.min.cs  s')
+  body
+    section 
+     .side_left_sponsor
+      .inner
+     .side_right_sponsor
+      .inner
+     .sponsor
+      .inner
+     .bigger_sponsor 
+      .inner
+      //.other_sponsor 
+        .inner
+      //-  .giveaway
+      //- .background
+      //- .glow 
+     //.MapPick_BG
+      .MapPick_Upper
+       .Team_picked Picked
+       .Team_winner Winner 
+       .Result Result
+      .Map1
+        .Team_Name
+        .Team_Winner
+        .Currently
+         .txt Currently Playing
+        .Map
+        .Map_Shade
+        .Map_Name Overpass
+        .Map_Result 16 - 12
+      .Map2 
+        .Team_Name
+        .Team_Winner
+        .Currently
+         .txt Currently Playing
+        .Map
+        .Map_Shade
+        .Map_Name Overpass
+        .Map_Result 16 - 12
+      .Map3
+        .Team_Name
+         .txt Decider
+        .Currently
+         .txt Currently Playing
+        .Map
+        .Map_Shade
+        .Map_Name Overpass
+        .Map_Result 16 - 12
+     //.Game_History
+        .History_Text
+          .Text Game History - 1º Half
+        .History_Bar
+          .Overtime_Divider
+            .text_1 H
+            .text_2 A
+            .text_3 L
+            .text_4 F
+          .Defuse_Bar_copy
+          .Left_Team
+            .Round_n1
+              .Result
+            .Round_n2
+              .Result
+            .Round_n3
+              .Result
+            .Round_n4
+              .Result
+            .Round_n5
+              .Result
+            .Round_n6
+              .Result
+            .Round_n7
+              .Result
+            .Round_n8
+              .Result
+            .Round_n9
+              .Result
+            .Round_n10
+              .Result
+            .Round_n11
+              .Result
+            .Round_n12
+              .Result
+            .Round_n13
+              .Result
+            .Round_n14
+              .Result
+            .Round_n15
+              .Result 
+          .Right_Team
+            .Round_n1
+              .Result
+            .Round_n2
+              .Result
+            .Round_n3
+              .Result
+            .Round_n4
+              .Result
+            .Round_n5
+              .Result
+            .Round_n6
+              .Result
+            .Round_n7
+              .Result
+            .Round_n8
+              .Result
+            .Round_n9
+              .Result
+            .Round_n10
+              .Result
+            .Round_n11
+              .Result
+            .Round_n12
+              .Result
+            .Round_n13
+              .Result
+            .Round_n14
+              .Result
+            .Round_n15
+              .Result 
+     .topbar_container
+      //.topbar_i_logo
+        .background
+        .inner
+          //- img(src='../../sponsors/rtp_logo.png')
+      .topbar_i_counter
+        //.separator
+        .vs_txt vs
+        .line1 
+        .line2
+        .title Players Alive
+        .player_count_right
+          .right_count 
+        .player_count_left   
+          .left_count
+     //.firepower
+      .left 
+      .right
+      .text FIREPOWER
+     .header_container
+      .upper_right_line
+      .upper_left_line
+      .best_container Best of 3
+      //.line
+      .left_logo_container
+        .logo
+      .right_logo_container
+        .logo
+      .time 
+      .left_series
+        .bo1
+        .bo3_map1 
+        .bo3_map2
+      .right_series
+        .bo1
+        .bo3_map1 
+        .bo3_map2
+      .left_name 
+      .right_name 
+      .left_score 
+      .right_score 
+      .round_container
+        .round_text
+      .snow
+      //.left_separator
+      //.right_separator
+      .bomb_countdown_container
+        .background 
+        .bomb
+    //.Pause_container
+      .Pause_Left
+        .background
+        .Pause_Text Tactical Pause
+          .Txt
+        .Lower_container
+         .pause_1
+         .pause_2
+         .pause_3
+         .pause_4
+      .Pause_Right
+        .background
+        .Pause_Text Tactical Pause
+          .Txt
+        .Lower_container
+         .pause_1
+         .pause_2
+         .pause_3
+         .pause_4
+    .Win_container
+      .win_container_left
+        .txt Wins The Round!
+      .win_container_right 
+        .txt Wins The Round!
+    .Progress_Bar
+      .Left_Team 
+        .Background
+        .Progress
+        .txt NICOODOZ
+      .Right_Team
+        .Background
+        .Progress
+        .txt NICOODOZ
+      .Center_Bar
+        .Center_Txt 
+    //.Team_A
+      .EquipValue 
+        .Upper_Container 
+          .txt Equipment Money
+        .Lower_Container 
+          .txt $1960
+      .TeamMoney 
+        .Upper_Container 
+          .txt Team Money
+        .Lower_Container 
+          .txt $1960
+      .LossBonus 
+        .Upper_Container 
+          .txt Loss Bonus
+        .Lower_Container 
+          .txt $1960
+        .bonus_boxes 
+          .bonus_box_1
+          .bonus_box_2
+          .bonus_box_3
+          .bonus_box_4
+      //.separator1 
+    //.Team_B
+      .EquipValue 
+        .Upper_Container 
+          .txt Equipment Money
+        .Lower_Container 
+          .txt $1960
+      .TeamMoney 
+        .Upper_Container 
+          .txt Team Money
+        .Lower_Container 
+          .txt $1960
+      .LossBonus 
+        .Upper_Container 
+          .txt Loss Bonus
+        .Lower_Container 
+          .txt $1960
+        .bonus_boxes 
+          .bonus_box_1
+          .bonus_box_2
+          .bonus_box_3
+          .bonus_box_4
+      //.separator1 
+    //.Spam_A   
+      .Spam_BG
+        .Top_Spam
+        .Progress_Background
+        .Progress
+        .Bottom_Spam  
+          .HE 
+            .HE_Icon
+            .HE_Txt  x10
+          .Flash 
+            .Flash_Icon
+            .Flash_Txt  x10
+          .Smoke 
+            .Smoke_Icon
+            .Smoke_Txt  x10
+          .Inc
+            .Inc_Icon
+            .Inc_Txt  x10
+    //.Spam_B  
+      .Spam_BG
+        .Top_Spam
+        .Progress_Background
+        .Progress
+        .Bottom_Spam  
+          .HE 
+            .HE_Icon
+            .HE_Txt  x10
+          .Flash 
+            .Flash_Icon
+            .Flash_Txt  x10
+          .Smoke 
+            .Smoke_Icon
+            .Smoke_Txt  x10
+          .Inc
+            .Inc_Icon
+            .Inc_Txt  x10   
+    //.LossBonus_A 
+      .Upper_Container
+        .txt Loss Bonus
+      .Lower_Container
+        .txt $1960
+      .bonus_boxes 
+        .bonus_box_1
+        .bonus_box_2
+        .bonus_box_3
+        .bonus_box_4
+    //.LossBonus_B
+      .Upper_Container
+        .txt Loss Bonus
+      .Lower_Container
+        .txt $1960
+      .bonus_boxes 
+        .bonus_box_1
+        .bonus_box_2
+        .bonus_box_3
+        .bonus_box_4
+    .observed_container
+      .line
+      .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+      .bomb_defuse
+      #nades
+      .name 
+      .flex_kd_observed
+          .armor 
+          .helmet
+          .k_icon  
+          .k
+          .d_icon
+          .d
+      .helmet 
+      .armor
+      .health_bar
+        .health_icon
+        .health 100
+        .separator
+        .health_bar_bg
+          .health_bar_sm
+      .ammo_bar
+        .ammo_icon 
+        .separator
+        .ammo_txt 100
+    .players_left_container 
+      #player1(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_left
+        .health_icon
+        .health_text
+        .armor_background
+          .armor
+        .helmet_background
+          .helmet
+       .flex_name_round 
+        .player_name 
+        //- .round_icon
+        //- .roundkills
+        //-  .txt 1
+       .bottom_bar
+        .flex_kd
+          .k_icon 
+          .k 
+          //.d_icon
+          //.d
+        //.flex_money_bomb
+          .money
+           .moneys
+        //.bomb_defuse_background
+        //.bomb_defuse
+        //.dead_utility
+        //.grenades
+        .weapon_icon
+      #player2(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')   
+        //.photo_player_shade 
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .diamond
+       .number
+       .flash
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_left
+        .health_icon
+        .health_text
+        .armor_background
+          .armor
+        .helmet_background
+          .helmet
+       .flex_name_round 
+        .player_name 
+        //- .round_icon
+        //- .roundkills
+        //-  .txt 1
+       .bottom_bar
+        .flex_kd
+          .k_icon 
+          .k 
+        //-   .d_icon
+        //-   .d
+        //- .flex_money_bomb
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player3(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')    
+        //- .photo_player_shade 
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .diamond
+       .number
+       .flash
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_left
+        .health_icon
+        .health_text
+        .armor_background
+          .armor
+        .helmet_background
+          .helmet
+       .flex_name_round 
+        .player_name 
+        //- .round_icon
+        //- .roundkills
+        //-  .txt 1
+       .bottom_bar
+        .flex_kd
+          .k_icon 
+          .k 
+        //-   .d_icon
+        //-   .d
+        //- .flex_money_bomb
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player4(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //- .photo_player_shade
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .diamond
+       .number
+       .flash
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_left
+        .health_icon
+        .health_text
+        .armor_background
+          .armor
+        .helmet_background
+          .helmet
+       .flex_name_round 
+        .player_name 
+        //- .round_icon
+        //- .roundkills
+        //-  .txt 1
+       .bottom_bar
+        .flex_kd
+          .k_icon 
+          .k 
+        //-   .d_icon
+        //-   .d
+        //- .flex_money_bomb
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player5(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //- .photo_player_shade
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .diamond
+       .number
+       .flash
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_left
+        .health_icon
+        .health_text
+        .armor_background
+          .armor
+        .helmet_background
+          .helmet
+       .flex_name_round 
+        .player_name
+        //- .round_icon 
+        //- .roundkills
+        //-  .txt 1 
+       .bottom_bar
+        .flex_kd
+          .k_icon 
+          .k 
+        //-   .d_icon
+        //-   .d
+        //- .flex_money_bomb
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+    .players_right_container 
+      #player1(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_right
+        .helmet_background
+          .helmet
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        //- .roundkills
+        //-   .txt 1
+        //- .round_icon
+        .player_name 
+       .bottom_bar
+        .flex_kd_right
+          .k
+          .k_icon  
+        //-   .d
+        //-   .d_icon
+        //- .flex_money_bomb_right
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player2(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_right
+        .helmet_background
+          .helmet
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        //- .roundkills
+        //-   .txt 1
+        //- .round_icon
+        .player_name 
+       .bottom_bar
+        .flex_kd_right
+          .k
+          .k_icon  
+        //-   .d
+        //-   .d_icon
+        //- .flex_money_bomb_right
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player3(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_right
+        .helmet_background
+          .helmet
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        //- .roundkills
+        //-   .txt 1
+        //- .round_icon
+        .player_name 
+       .bottom_bar
+        .flex_kd_right
+          .k
+          .k_icon  
+        //-   .d
+        //-   .d_icon
+        //- .flex_money_bomb_right
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player4(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_right
+        .helmet_background
+          .helmet
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        //- .roundkills
+        //-   .txt 1
+        //- .round_icon
+        .player_name 
+       .bottom_bar
+        .flex_kd_right
+          .k
+          .k_icon  
+        //-   .d
+        //-   .d_icon
+        //- .flex_money_bomb_right
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
+      #player5(class="player_container")
+       .background
+       .photo_container
+        .photo_player 
+          img(src='../../files/img/players/1.png')
+        //.photo_player_shade
+       .diamond
+       .number
+       .flash
+       //.Round_Kills
+        .background2
+        .icon
+        .frags
+       .top_bar
+        .health_red
+        .health_bar
+       .flex_lower_right
+        .helmet_background
+          .helmet
+        .armor_background
+          .armor
+        .health_text
+        .health_icon
+       .flex_name_round_right 
+        //- .roundkills
+        //-   .txt 1
+        //- .round_icon
+        .player_name 
+       .bottom_bar
+        .flex_kd_right
+          .k
+          .k_icon  
+        //-   .d
+        //-   .d_icon
+        //- .flex_money_bomb_right
+        //-   .money
+        //-    .moneys
+        //- .bomb_defuse_background
+        //- .bomb_defuse
+        //- .dead_utility
+        //- .grenades
+        .weapon_icon
